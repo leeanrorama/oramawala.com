@@ -3983,8 +3983,7 @@ input, select, textarea {
 
 				.wrapper.style1 {
 					flex-direction: column;
-					align-items: center;
-					justify-content: space-between;
+					justify-content: start;
 				}
 
 			}
