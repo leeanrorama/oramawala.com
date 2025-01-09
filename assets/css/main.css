@@ -3565,7 +3565,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: hsla(var(--font-color), 0.95);
+		color: hsl(var(--font-color));
 	}
 
 	#header + #wrapper + #footer > .inner {
