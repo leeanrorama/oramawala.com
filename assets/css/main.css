@@ -13,9 +13,14 @@
 	--sidebar-color: 0, 0%, 92%;
 	--accent-color: 50, 25%, 70%;
 
+	--section-one-color: 50, 25%, 90%;
+	--section-two-color: 50, 25%, 80%;
+	--section-three-color: 50, 25%, 70%;
+	--section-four-color: 50, 25%, 60%;
+
 	--font-color: 0, 0%, 20%;
 	--heading-color: 0, 0%, 5%;
-	--footer-color: 50, 25%, 70%;
+	--footer-color: 48, 25%, 70%;
 }
 
 .dark {
@@ -25,18 +30,16 @@
 	--sidebar-color: 0, 0%, 8%;
 	--accent-color: 50, 25%, 60%;
 
+	--section-one-color: 50, 25%, 30%;
+	--section-two-color: 50, 25%, 20%;
+	--section-three-color: 50, 25%, 10%;
+	--section-four-color: 50, 25%, 0%;
+
 	--font-color: 0, 0%, 80%;
 	--heading-color: 0, 0%, 95%;
-	--footer-color: 0, 0%, 60%;
-}
+	--footer-color: 48, 25%, 34%;
 
-#intro img {
-	width: 15rem;
-	border-radius: 50%;
-	box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-	margin-top: 20px;
-	margin-bottom: 20px;
-	filter: grayscale(20%);
+	--img-dark-brightness: 88%;
 }
 
 html, body, div, span, applet, object,
@@ -1855,6 +1858,16 @@ input, select, textarea {
 		cursor: pointer;
 		position: relative;
 		top: 20%;
+		
+		border: 0px !important;
+		background-color: none !important;
+		padding: 0;
+		height: 30px;
+		width: 30px;
+	}
+
+	#darkmodetoggle::after {
+		top: 5%;
 	}
 
 	input[type="submit"],
@@ -2583,19 +2596,19 @@ input, select, textarea {
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
+					color: hsl(var(--accent-color));
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
+					color: hsl(var(--accent-color));
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: hsl(var(--accent-color));
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #953d75;
+					color: hsl(var(--accent-color));
 				}
 
 /* Image */
@@ -3061,7 +3074,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: hsl(var(--accent-color));
 				content: '';
 				display: block;
 				height: 100%;
@@ -3275,7 +3288,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: hsl(var(--secondary-color));
 		}
 
 		.wrapper.style1 {
@@ -3283,23 +3296,23 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: hsl(var(--tertiary-color));
+			background-color: hsl(var(--footer-color));
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: hsl(var(--section-one-color));
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: hsl(var(--section-one-alt-color));
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: hsl(var(--section-two-color));
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: hsl(var(--section-two-alt-color));
 		}
 
 		.wrapper.fullscreen {
@@ -3552,7 +3565,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: hsl(var(--footer-color));
+		color: hsla(var(--font-color), 0.5);
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3896,7 +3909,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: hsl(var(--accent-color));
 						}
 
 		}
@@ -3919,6 +3932,21 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
+	#intro img {
+		width: 20rem;
+		border-radius: 50%;
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+		margin-right: 10em;
+		filter: grayscale(20%);
+		filter: brightness(var(--img-dark-brightness));
+	}
+
+	.wrapper.style1 {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 		#intro p {
 			font-size: 1.25em;
 		}
@@ -3937,12 +3965,20 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
+				#intro img {
+					display: none;
+				}
+
 			}
 
 		@media screen and (max-width: 1280px) {
 
 			#intro {
 				background-attachment: scroll;
+			}
+
+			#intro img {
+				margin-right: 4em;
 			}
 
 		}
