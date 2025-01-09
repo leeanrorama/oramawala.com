@@ -3932,6 +3932,10 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
+	#intro .image {
+		order: 3 !important;
+	}
+
 	#intro img {
 		width: 20rem;
 		height: 26.6rem;
@@ -3966,8 +3970,19 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
+				#intro .image {
+					order: 1 !important
+				}
+
 				#intro img {
-					display: none;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.wrapper.style1 {
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between;
 				}
 
 			}
@@ -3976,10 +3991,6 @@ input, select, textarea {
 
 			#intro {
 				background-attachment: scroll;
-			}
-
-			#intro img {
-				margin-right: 4em;
 			}
 
 		}
