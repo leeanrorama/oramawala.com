@@ -3934,6 +3934,7 @@ input, select, textarea {
 
 	#intro img {
 		width: 20rem;
+		height: 26.6rem;
 		border-radius: 50%;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 		margin-right: 10em;
