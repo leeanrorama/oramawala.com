@@ -18,7 +18,7 @@
 	--section-three-color: 50, 25%, 70%;
 	--section-four-color: 50, 25%, 60%;
 
-	--font-color: 0, 0%, 20%;
+	--font-color: 0, 0%, 30%;
 	--heading-color: 0, 0%, 5%;
 	--footer-color: 48, 25%, 70%;
 }
@@ -3565,7 +3565,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: hsla(var(--font-color), 0.5);
+		color: hsla(var(--font-color), 0.8);
 	}
 
 	#header + #wrapper + #footer > .inner {
