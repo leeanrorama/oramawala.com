@@ -3975,6 +3975,8 @@ input, select, textarea {
 				}
 
 				#intro img {
+					width: 13rem;
+					height: 19.6rem;
 					margin-left: auto;
 					margin-right: auto;
 				}
