@@ -273,7 +273,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 1.7em;
 		}
 
 		h2 {
@@ -2787,7 +2787,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 736px) { /* prev 480px */
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3283,6 +3283,7 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
+					text-align: center;
 				}
 
 			}
@@ -3937,10 +3938,10 @@ input, select, textarea {
 	}
 
 	#intro img {
-		width: 20rem;
-		height: 26.625rem;
-		border-radius: 50%;
-		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+		width: 100%;
+		height: 100%;
+		/*border-radius: 50%;
+		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);*/
 		margin-right: 10em;
 		filter: grayscale(20%);
 		filter: brightness(var(--img-dark-brightness));
@@ -3975,8 +3976,6 @@ input, select, textarea {
 				}
 
 				#intro img {
-					width: 13rem;
-					height: 17.3125rem;
 					margin-left: auto;
 					margin-right: auto;
 				}
