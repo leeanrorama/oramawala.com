@@ -3942,7 +3942,7 @@ input, select, textarea {
 		height: 100%;
 		/*border-radius: 50%;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);*/
-		margin-right: 10em;
+		padding-right: 1.5em;
 		filter: grayscale(20%);
 		filter: brightness(var(--img-dark-brightness));
 	}
@@ -3972,7 +3972,10 @@ input, select, textarea {
 				}
 
 				#intro .image {
-					order: 1 !important
+					width: 70%;
+					height: 70%;
+					order: 1 !important;
+					padding-right: 0;
 				}
 
 				#intro img {
