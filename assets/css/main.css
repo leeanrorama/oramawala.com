@@ -3283,6 +3283,9 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
+				}
+
+				#heroinner {
 					text-align: center;
 				}
 
@@ -3940,11 +3943,11 @@ input, select, textarea {
 	#intro img {
 		width: 100%;
 		height: 100%;
+		padding-right: 1.5em;
 		/*border-radius: 50%;
 		box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);*/
-		padding-right: 1.5em;
-		filter: grayscale(20%);
-		filter: brightness(var(--img-dark-brightness));
+		/*filter: grayscale(20%);
+		filter: brightness(var(--img-dark-brightness));*/
 	}
 
 	.wrapper.style1 {
@@ -3975,12 +3978,11 @@ input, select, textarea {
 					width: 70%;
 					height: 70%;
 					order: 1 !important;
-					padding-right: 0;
 				}
 
 				#intro img {
-					margin-left: auto;
-					margin-right: auto;
+					padding: 0;
+					margin: 0;
 				}
 
 				.wrapper.style1 {
@@ -3997,3 +3999,5 @@ input, select, textarea {
 			}
 
 		}
+
+	
