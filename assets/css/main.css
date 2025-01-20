@@ -136,7 +136,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: hsl(var(--secondary-color));
+		background: hsl(var(--footer-color));
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
