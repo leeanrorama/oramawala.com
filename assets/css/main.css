@@ -14,9 +14,9 @@
 	--accent-color: 50, 25%, 70%;
 
 	--section-one-color: 50, 25%, 90%;
-	--section-two-color: 50, 25%, 80%;
+	--section-two-color: 50, 25%, 75%;
 	--section-three-color: 50, 25%, 70%;
-	--section-four-color: 50, 25%, 60%;
+	--section-four-color: 50, 25%, 82%;
 
 	--font-color: 0, 0%, 30%;
 	--heading-color: 0, 0%, 5%;
@@ -34,7 +34,7 @@
 	--section-one-color: 50, 25%, 30%;
 	--section-two-color: 50, 25%, 20%;
 	--section-three-color: 50, 25%, 10%;
-	--section-four-color: 50, 25%, 0%;
+	--section-four-color: 50, 25%, 9%;
 
 	--font-color: 0, 0%, 80%;
 	--heading-color: 0, 0%, 95%;
@@ -4003,4 +4003,16 @@ input, select, textarea {
 
 		}
 
-	
+	#cta {
+		background-color: hsl(var(--section-four-color));
+		text-align: center;
+	}
+
+	#cta p {
+		font-size: 1.33em;
+		margin-bottom: 1em;
+	}
+
+	#cta h1 {
+		margin-bottom: 0;
+	}
