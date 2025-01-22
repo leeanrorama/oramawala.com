@@ -4016,3 +4016,24 @@ input, select, textarea {
 	#cta h1 {
 		margin-bottom: 0;
 	}
+
+	#solutions > div {
+		text-align: center;
+	}
+
+	#solutions > div > div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 2em;
+		align-items: end;
+	}
+
+	#solutions img {
+		width: auto;
+		height: 15em;
+	}
+
+	#solutions > div > div > div > p {
+		font-weight: bold;
+	}
