@@ -3965,6 +3965,10 @@ input, select, textarea {
 		#intro p {
 			font-size: 1.25em;
 		}
+		
+		#intro h1, h2, h3 {
+			line-height: 1em;
+		}
 
 			@media screen and (max-width: 980px) {
 
