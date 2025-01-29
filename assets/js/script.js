@@ -10,7 +10,6 @@ function setDarkMode() {
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
-  console.log('toggled');
 }
 
 setDarkMode();
