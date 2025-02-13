@@ -8,8 +8,14 @@ function setDarkMode() {
   }
 }
 
-function toggleDarkMode() {
-  document.body.classList.toggle("dark");
+function updateCopyrightYear() {
+  const yearSpan = document.getElementById('current-year');
+  yearSpan.textContent =  " " + "2024 - " + new Date().getFullYear();
 }
 
 setDarkMode();
+updateCopyrightYear();
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
