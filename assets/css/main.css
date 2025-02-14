@@ -3945,6 +3945,7 @@ input, select, textarea {
 	#intro img {
 		width: 100%;
 		height: 100%;
+		max-width: 35vw;
 		content: var(--logo);
 		/*box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 		border-radius: 50%;
@@ -3992,7 +3993,7 @@ input, select, textarea {
 
 				#intro img {
 					padding: 0;
-					margin: 0;
+					margin: auto;
 				}
 
 				.wrapper.style1 {
